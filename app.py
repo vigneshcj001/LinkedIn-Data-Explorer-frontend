@@ -19,7 +19,7 @@ tabs = st.tabs([
     "📰 User Posts",
     "📊 Comment Analytics",
     "🏢 Company Details",
-    "📰 Company Posts"
+
 ])
 
 
@@ -196,4 +196,5 @@ with tabs[4]:
                         st.json(data)
             except Exception as e:
                 st.error(f"Error fetching company details: {e}")
+
 
