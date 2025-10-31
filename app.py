@@ -6,7 +6,7 @@ import pandas as pd
 import altair as alt
 
 # ✅ Use your deployed Railway backend
-FASTAPI_URL = os.getenv("FASTAPI_URL", "https://linkedin-data-explorer-production.up.railway.app/api")
+FASTAPI_URL = os.getenv("FASTAPI_URL", "https://linkedin-data-explorer.onrender.com/api"")
 
 st.set_page_config(page_title="LinkedIn Data Explorer", layout="wide")
 st.title("🔗 LinkedIn Data Explorer")
@@ -245,3 +245,4 @@ with tabs[5]:
                             st.json(data)
             except Exception as e:
                 st.error(f"Error fetching company posts: {e}")
+
